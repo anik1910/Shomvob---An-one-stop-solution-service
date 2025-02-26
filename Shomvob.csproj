@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1CBD95A-A60E-48C8-BF53-B1296610A760}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Shomvob</RootNamespace>
+    <AssemblyName>Shomvob</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\UI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\UI\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AambulanceInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AambulanceInterface.Designer.cs">
+      <DependentUpon>AambulanceInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbusInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbusInterface.Designer.cs">
+      <DependentUpon>AbusInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAccountInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccountInterface.Designer.cs">
+      <DependentUpon>AdminAccountInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBalanceInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBalanceInterface.Designer.cs">
+      <DependentUpon>AdminBalanceInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControlnterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControlnterface.Designer.cs">
+      <DependentUpon>AdminControlnterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMainInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainInterface.Designer.cs">
+      <DependentUpon>AdminMainInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AeHistoryInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AeHistoryInterface.Designer.cs">
+      <DependentUpon>AeHistoryInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AeComplainInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AeComplainInterface.Designer.cs">
+      <DependentUpon>AeComplainInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AeDetailsInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AeDetailsInterface.Designer.cs">
+      <DependentUpon>AeDetailsInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AeHelpReqInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AeHelpReqInterface.Designer.cs">
+      <DependentUpon>AeHelpReqInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AemergencyInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AemergencyInterface.Designer.cs">
+      <DependentUpon>AemergencyInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AfireserviceInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfireserviceInterface.Designer.cs">
+      <DependentUpon>AfireserviceInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AhospitalInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AhospitalInterface.Designer.cs">
+      <DependentUpon>AhospitalInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AmbulanceInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmbulanceInterface.Designer.cs">
+      <DependentUpon>AmbulanceInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApoliceInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApoliceInterface.Designer.cs">
+      <DependentUpon>ApoliceInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArHistoryInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArHistoryInterface.Designer.cs">
+      <DependentUpon>ArHistoryInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArComplainIterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArComplainIterface.Designer.cs">
+      <DependentUpon>ArComplainIterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArDetailsInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArDetailsInterface.Designer.cs">
+      <DependentUpon>ArDetailsInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArHelpReqInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArHelpReqInterface.Designer.cs">
+      <DependentUpon>ArHelpReqInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASOS.Designer.cs">
+      <DependentUpon>ASOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsosInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsosInterface.Designer.cs">
+      <DependentUpon>AsosInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AtrainInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtrainInterface.Designer.cs">
+      <DependentUpon>AtrainInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuHistoryInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuHistoryInterface.Designer.cs">
+      <DependentUpon>AuHistoryInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuComplainBoxInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuComplainBoxInterface.Designer.cs">
+      <DependentUpon>AuComplainBoxInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuHelpReqInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuHelpReqInterface.Designer.cs">
+      <DependentUpon>AuHelpReqInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuserDetailsInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuserDetailsInterface.Designer.cs">
+      <DependentUpon>AuserDetailsInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusInterface.Designer.cs">
+      <DependentUpon>BusInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cards.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cards.Designer.cs">
+      <DependentUpon>Cards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="ADataControlInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADataControlInterface.Designer.cs">
+      <DependentUpon>ADataControlInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmergencyInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmergencyInterface.Designer.cs">
+      <DependentUpon>EmergencyInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expertacceptinterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expertacceptinterface.Designer.cs">
+      <DependentUpon>Expertacceptinterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertBalanceInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertBalanceInterface.Designer.cs">
+      <DependentUpon>ExpertBalanceInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertControlInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertControlInterface.Designer.cs">
+      <DependentUpon>ExpertControlInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertDetails.Designer.cs">
+      <DependentUpon>ExpertDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertHistoryInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertHistoryInterface.Designer.cs">
+      <DependentUpon>ExpertHistoryInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertInterface.Designer.cs">
+      <DependentUpon>ExpertInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertMapinterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertMapinterface.Designer.cs">
+      <DependentUpon>ExpertMapinterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertPrivacyNPolicyInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertPrivacyNPolicyInterface.Designer.cs">
+      <DependentUpon>ExpertPrivacyNPolicyInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertReferInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertReferInterface.Designer.cs">
+      <DependentUpon>ExpertReferInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertSOSMassage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertSOSMassage.Designer.cs">
+      <DependentUpon>ExpertSOSMassage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FireServiceInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FireServiceInterface.Designer.cs">
+      <DependentUpon>FireServiceInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingInterface.Designer.cs">
+      <DependentUpon>LoadingInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapInterfaceCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapInterfaceCar.Designer.cs">
+      <DependentUpon>MapInterfaceCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapInterfaceCNG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapInterfaceCNG.Designer.cs">
+      <DependentUpon>MapInterfaceCNG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapInterfaceUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapInterfaceUser.Designer.cs">
+      <DependentUpon>MapInterfaceUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mobile.Designer.cs">
+      <DependentUpon>Mobile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderAcceptInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderAcceptInterface.Designer.cs">
+      <DependentUpon>RiderAcceptInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderComplain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderComplain.Designer.cs">
+      <DependentUpon>RiderComplain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderControlInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderControlInterface.Designer.cs">
+      <DependentUpon>RiderControlInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderPaymentBkash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderPaymentBkash.Designer.cs">
+      <DependentUpon>RiderPaymentBkash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderPaymentCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderPaymentCard.Designer.cs">
+      <DependentUpon>RiderPaymentCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderPrivacyNPolicyInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderPrivacyNPolicyInterface.Designer.cs">
+      <DependentUpon>RiderPrivacyNPolicyInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalInterface.Designer.cs">
+      <DependentUpon>HospitalInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoliceInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoliceInterface.Designer.cs">
+      <DependentUpon>PoliceInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RunningUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunningUser.Designer.cs">
+      <DependentUpon>RunningUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RunningRider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunningRider.Designer.cs">
+      <DependentUpon>RunningRider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderSOSMassage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderSOSMassage.Designer.cs">
+      <DependentUpon>RiderSOSMassage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepairingRider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairingRider.Designer.cs">
+      <DependentUpon>RepairingRider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepairingExpert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairingExpert.Designer.cs">
+      <DependentUpon>RepairingExpert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrainInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainInterface.Designer.cs">
+      <DependentUpon>TrainInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserComplain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserComplain.Designer.cs">
+      <DependentUpon>UserComplain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControlInterface.Designer.cs">
+      <DependentUpon>UserControlInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPaymentBkash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPaymentBkash.Designer.cs">
+      <DependentUpon>UserPaymentBkash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPaymentCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPaymentCard.Designer.cs">
+      <DependentUpon>UserPaymentCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPrivacyNPolicyInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPrivacyNPolicyInterface.Designer.cs">
+      <DependentUpon>UserPrivacyNPolicyInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RiderBalanceInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderBalanceInterface.Designer.cs">
+      <DependentUpon>RiderBalanceInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderDetails.Designer.cs">
+      <DependentUpon>RiderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderHistoryInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderHistoryInterface.Designer.cs">
+      <DependentUpon>RiderHistoryInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderInterface.Designer.cs">
+      <DependentUpon>RiderInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderReferInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderReferInterface.Designer.cs">
+      <DependentUpon>RiderReferInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpPage.Designer.cs">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserBalanceInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserBalanceInterface.Designer.cs">
+      <DependentUpon>UserBalanceInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDetails.Designer.cs">
+      <DependentUpon>UserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHistoryInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHistoryInterface.Designer.cs">
+      <DependentUpon>UserHistoryInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface.Designer.cs">
+      <DependentUpon>UserInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserReferInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserReferInterface.Designer.cs">
+      <DependentUpon>UserReferInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSOSMassage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSOSMassage.Designer.cs">
+      <DependentUpon>UserSOSMassage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitingRider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitingRider.Designer.cs">
+      <DependentUpon>WaitingRider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="waitingTimerUser .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="waitingTimerUser .Designer.cs">
+      <DependentUpon>waitingTimerUser .cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AambulanceInterface.resx">
+      <DependentUpon>AambulanceInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbusInterface.resx">
+      <DependentUpon>AbusInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAccountInterface.resx">
+      <DependentUpon>AdminAccountInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminBalanceInterface.resx">
+      <DependentUpon>AdminBalanceInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminControlnterface.resx">
+      <DependentUpon>AdminControlnterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMainInterface.resx">
+      <DependentUpon>AdminMainInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AeHistoryInterface.resx">
+      <DependentUpon>AeHistoryInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AeComplainInterface.resx">
+      <DependentUpon>AeComplainInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AeDetailsInterface.resx">
+      <DependentUpon>AeDetailsInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AeHelpReqInterface.resx">
+      <DependentUpon>AeHelpReqInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AemergencyInterface.resx">
+      <DependentUpon>AemergencyInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AfireserviceInterface.resx">
+      <DependentUpon>AfireserviceInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AhospitalInterface.resx">
+      <DependentUpon>AhospitalInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AmbulanceInterface.resx">
+      <DependentUpon>AmbulanceInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApoliceInterface.resx">
+      <DependentUpon>ApoliceInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArHistoryInterface.resx">
+      <DependentUpon>ArHistoryInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArComplainIterface.resx">
+      <DependentUpon>ArComplainIterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArDetailsInterface.resx">
+      <DependentUpon>ArDetailsInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArHelpReqInterface.resx">
+      <DependentUpon>ArHelpReqInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASOS.resx">
+      <DependentUpon>ASOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsosInterface.resx">
+      <DependentUpon>AsosInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtrainInterface.resx">
+      <DependentUpon>AtrainInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuHistoryInterface.resx">
+      <DependentUpon>AuHistoryInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuComplainBoxInterface.resx">
+      <DependentUpon>AuComplainBoxInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuHelpReqInterface.resx">
+      <DependentUpon>AuHelpReqInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuserDetailsInterface.resx">
+      <DependentUpon>AuserDetailsInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusInterface.resx">
+      <DependentUpon>BusInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cards.resx">
+      <DependentUpon>Cards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADataControlInterface.resx">
+      <DependentUpon>ADataControlInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmergencyInterface.resx">
+      <DependentUpon>EmergencyInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expertacceptinterface.resx">
+      <DependentUpon>Expertacceptinterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertBalanceInterface.resx">
+      <DependentUpon>ExpertBalanceInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertControlInterface.resx">
+      <DependentUpon>ExpertControlInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertDetails.resx">
+      <DependentUpon>ExpertDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertHistoryInterface.resx">
+      <DependentUpon>ExpertHistoryInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertInterface.resx">
+      <DependentUpon>ExpertInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertMapinterface.resx">
+      <DependentUpon>ExpertMapinterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertPrivacyNPolicyInterface.resx">
+      <DependentUpon>ExpertPrivacyNPolicyInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertReferInterface.resx">
+      <DependentUpon>ExpertReferInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertSOSMassage.resx">
+      <DependentUpon>ExpertSOSMassage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FireServiceInterface.resx">
+      <DependentUpon>FireServiceInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingInterface.resx">
+      <DependentUpon>LoadingInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapInterfaceCar.resx">
+      <DependentUpon>MapInterfaceCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapInterfaceCNG.resx">
+      <DependentUpon>MapInterfaceCNG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapInterfaceUser.resx">
+      <DependentUpon>MapInterfaceUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mobile.resx">
+      <DependentUpon>Mobile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderAcceptInterface.resx">
+      <DependentUpon>RiderAcceptInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderComplain.resx">
+      <DependentUpon>RiderComplain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderControlInterface.resx">
+      <DependentUpon>RiderControlInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderPaymentBkash.resx">
+      <DependentUpon>RiderPaymentBkash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderPaymentCard.resx">
+      <DependentUpon>RiderPaymentCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderPrivacyNPolicyInterface.resx">
+      <DependentUpon>RiderPrivacyNPolicyInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalInterface.resx">
+      <DependentUpon>HospitalInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoliceInterface.resx">
+      <DependentUpon>PoliceInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RunningUser.resx">
+      <DependentUpon>RunningUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RunningRider.resx">
+      <DependentUpon>RunningRider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderSOSMassage.resx">
+      <DependentUpon>RiderSOSMassage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepairingRider.resx">
+      <DependentUpon>RepairingRider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepairingExpert.resx">
+      <DependentUpon>RepairingExpert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainInterface.resx">
+      <DependentUpon>TrainInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserComplain.resx">
+      <DependentUpon>UserComplain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlInterface.resx">
+      <DependentUpon>UserControlInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPaymentBkash.resx">
+      <DependentUpon>UserPaymentBkash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPaymentCard.resx">
+      <DependentUpon>UserPaymentCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPrivacyNPolicyInterface.resx">
+      <DependentUpon>UserPrivacyNPolicyInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RiderBalanceInterface.resx">
+      <DependentUpon>RiderBalanceInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderDetails.resx">
+      <DependentUpon>RiderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderHistoryInterface.resx">
+      <DependentUpon>RiderHistoryInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderInterface.resx">
+      <DependentUpon>RiderInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderReferInterface.resx">
+      <DependentUpon>RiderReferInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpPage.resx">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserBalanceInterface.resx">
+      <DependentUpon>UserBalanceInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDetails.resx">
+      <DependentUpon>UserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHistoryInterface.resx">
+      <DependentUpon>UserHistoryInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface.resx">
+      <DependentUpon>UserInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserReferInterface.resx">
+      <DependentUpon>UserReferInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSOSMassage.resx">
+      <DependentUpon>UserSOSMassage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitingRider.resx">
+      <DependentUpon>WaitingRider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="waitingTimerUser .resx">
+      <DependentUpon>waitingTimerUser .cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
